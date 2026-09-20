@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeatherNow</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>WeatherNow ⛅</h1>
+    <p class="subtitle">Live weather using a public API (no key needed)</p>
+
+    <form id="search-form">
+      <input type="text" id="city-input" placeholder="Enter a city (e.g. Mumbai)" required />
+      <button type="submit">Search</button>
+      <button type="button" id="locate-btn" title="Use my location">📍</button>
+    </form>
+
+    <div id="status"></div>
+
+    <div id="current-weather" class="card hidden"></div>
+
+    <div id="forecast" class="forecast-grid hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
